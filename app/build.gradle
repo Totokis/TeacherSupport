@@ -25,6 +25,8 @@ android {
 }
 
 dependencies {
+    implementation 'androidx.legacy:legacy-support-v4:1.0.0'
+
 
     // from https://developer.android.com/guide/navigation/navigation-getting-started
     def nav_version = "2.3.1"
