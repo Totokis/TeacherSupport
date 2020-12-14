@@ -16,5 +16,4 @@ class GroupFragment : Fragment(){
         val view: View = inflater.inflate(R.layout.group_fragment, container, false)
         return view
     }
-
 }
