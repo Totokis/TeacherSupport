@@ -8,7 +8,7 @@
     <fragment
         android:id="@+id/startFragment"
         android:name="com.example.testproject.View.StartFragment"
-        android:label="StartFragment"
+        android:label="TeacherApp"
         tools:layout="@layout/start_fragment">
         <action
             android:id="@+id/action_startFragment_to_groupFragment"
@@ -17,6 +17,19 @@
     <fragment
         android:id="@+id/groupFragment"
         android:name="com.example.testproject.View.GroupFragment"
-        android:label="GroupFragment"
-        tools:layout="@layout/group_fragment"/>
+        android:label="Wybór grupy"
+        tools:layout="@layout/group_fragment">
+        <action
+            android:id="@+id/action_groupFragment_to_addGroup"
+            app:destination="@id/addGroup" />
+    </fragment>
+    <fragment
+        android:id="@+id/addGroup"
+        android:name="com.example.testproject.View.AddGroup"
+        android:label="Dodawanie grupy"
+        tools:layout="@layout/fragment_add_group" >
+        <action
+            android:id="@+id/action_addGroup_to_groupFragment"
+            app:destination="@id/groupFragment" />
+    </fragment>
 </navigation>
