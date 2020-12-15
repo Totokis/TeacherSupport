@@ -11,7 +11,6 @@ import kotlinx.android.synthetic.main.start_fragment.view.*
 
 class StartFragment : Fragment()
 {
-
     override fun onCreateView(
         inflater: LayoutInflater,
         container: ViewGroup?,
