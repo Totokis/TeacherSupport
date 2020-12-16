@@ -9,4 +9,16 @@ class GroupRepository(private val groupDao: GroupDao) {
     suspend fun addGroup(group:Group){
         groupDao.addGroup(group)
     }
+
+    suspend fun updateGroup(group: Group){
+        groupDao.updateGroup(group)
+    }
+
+    suspend fun deleteGroup(group: Group){
+        groupDao.deleteGroup(group)
+    }
+
+    suspend fun deleteAllGroups(){
+        groupDao.deleteAllGroups()
+    }
 }

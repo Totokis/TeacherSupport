@@ -14,7 +14,7 @@ import com.example.testproject.ViewModel.GroupViewModel
 import kotlinx.android.synthetic.main.fragment_add_group.*
 import kotlinx.android.synthetic.main.fragment_add_group.view.*
 
-class AddGroup : Fragment() {
+class GroupAdd : Fragment() {
 
     private lateinit var mGroupViewModel: GroupViewModel
     override fun onCreateView(

@@ -5,4 +5,6 @@
     <string name="nazwa_grupy">Nazwa Grupy</string>
     <string name="group_name">Nazwa grupy</string>
     <string name="group_add_button">Dodaj</string>
+    <string name="group_name_row">Grupa A</string>
+    <string name="update_button">Aktualizuj</string>
 </resources>

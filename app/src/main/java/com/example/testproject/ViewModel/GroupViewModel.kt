@@ -10,7 +10,7 @@ import kotlinx.coroutines.launch
 
 class GroupViewModel(application: Application) : AndroidViewModel(application){
 
-    private val readAllData: LiveData<List<Group>>
+    val readAllData: LiveData<List<Group>>
     private val repository: GroupRepository
 
     init{
@@ -23,6 +23,24 @@ class GroupViewModel(application: Application) : AndroidViewModel(application){
     fun addGroup(group: Group){
         viewModelScope.launch(Dispatchers.IO){
             repository.addGroup(group)
+        }
+    }
+
+    fun updateGroup(group: Group){
+        viewModelScope.launch(Dispatchers.IO){
+            repository.updateGroup(group)
+        }
+    }
+
+    fun deleteGroup(group: Group){
+        viewModelScope.launch(Dispatchers.IO) {
+            repository.deleteGroup(group)
+        }
+    }
+
+    fun deleteAllGroups(){
+        viewModelScope.launch(Dispatchers.IO) {
+            repository.deleteAllGroups()
         }
     }
 }

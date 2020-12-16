@@ -12,7 +12,7 @@ abstract class GroupDatabase: RoomDatabase() {
 
     companion object{
         @Volatile
-        private var INSTNACE: GroupDatabase? =null
+        private var INSTNACE: GroupDatabase? = null
 
         fun getDatabase(context: Context): GroupDatabase{
             val tempInstance = INSTNACE

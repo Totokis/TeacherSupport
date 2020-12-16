@@ -21,15 +21,30 @@
         tools:layout="@layout/group_fragment">
         <action
             android:id="@+id/action_groupFragment_to_addGroup"
-            app:destination="@id/addGroup" />
+            app:destination="@id/groupAdd" />
+        <action
+            android:id="@+id/action_groupFragment_to_groupUpdate"
+            app:destination="@id/groupUpdate" />
     </fragment>
     <fragment
-        android:id="@+id/addGroup"
-        android:name="com.example.testproject.View.AddGroup"
+        android:id="@+id/groupAdd"
+        android:name="com.example.testproject.View.GroupAdd"
         android:label="Dodawanie grupy"
         tools:layout="@layout/fragment_add_group" >
         <action
             android:id="@+id/action_addGroup_to_groupFragment"
             app:destination="@id/groupFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/groupUpdate"
+        android:name="com.example.testproject.View.GroupUpdate"
+        android:label="Edytuj"
+        tools:layout="@layout/fragment_group_update" >
+        <action
+            android:id="@+id/action_groupUpdate_to_groupFragment"
+            app:destination="@id/groupFragment" />
+        <argument
+            android:name="currentGroup"
+            app:argType="com.example.testproject.Model.data.Group" />
     </fragment>
 </navigation>

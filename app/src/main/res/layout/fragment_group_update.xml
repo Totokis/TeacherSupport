@@ -2,17 +2,18 @@
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/group_add"
+    android:id="@+id/group_update"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".View.GroupAdd">
+    tools:context=".View.GroupUpdate">
+
 
     <EditText
-        android:id="@+id/groupName_et"
+        android:id="@+id/update_groupName_et"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:ems="10"
-        android:hint="@string/group_name"
+        android:hint="@string/nazwa_grupy"
         android:importantForAutofill="no"
         android:inputType="textPersonName"
         app:layout_constraintEnd_toEndOf="parent"
@@ -20,13 +21,13 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <Button
-        android:id="@+id/group_add_button"
+        android:id="@+id/update_group_button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/group_add_button"
+        android:text="@string/update_button"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/groupName_et" />
+        app:layout_constraintTop_toBottomOf="@+id/update_groupName_et" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
