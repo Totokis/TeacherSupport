@@ -13,18 +13,24 @@
         <action
             android:id="@+id/action_startFragment_to_groupFragment"
             app:destination="@id/groupFragment" />
+        <action
+            android:id="@+id/action_startFragment_to_studentFragment"
+            app:destination="@id/studentFragment" />
     </fragment>
     <fragment
         android:id="@+id/groupFragment"
         android:name="com.example.testproject.View.GroupFragment"
         android:label="Wybór grupy"
-        tools:layout="@layout/group_fragment">
+        tools:layout="@layout/fragment_group">
         <action
             android:id="@+id/action_groupFragment_to_addGroup"
             app:destination="@id/groupAdd" />
         <action
             android:id="@+id/action_groupFragment_to_groupUpdate"
             app:destination="@id/groupUpdate" />
+        <action
+            android:id="@+id/action_groupFragment_to_startFragment"
+            app:destination="@id/startFragment" />
     </fragment>
     <fragment
         android:id="@+id/groupAdd"
@@ -46,5 +52,38 @@
         <argument
             android:name="currentGroup"
             app:argType="com.example.testproject.Model.data.Group" />
+    </fragment>
+    <fragment
+        android:id="@+id/studentFragment"
+        android:name="com.example.testproject.View.StudentFragment"
+        android:label="fragment_student"
+        tools:layout="@layout/fragment_student" >
+        <action
+            android:id="@+id/action_studentFragment_to_startFragment"
+            app:destination="@id/startFragment" />
+        <action
+            android:id="@+id/action_studentFragment_to_studentAdd"
+            app:destination="@id/studentAdd" />
+        <action
+            android:id="@+id/action_studentFragment_to_studentUpdate"
+            app:destination="@id/studentUpdate" />
+    </fragment>
+    <fragment
+        android:id="@+id/studentAdd"
+        android:name="com.example.testproject.View.StudentAdd"
+        android:label="fragment_student_add"
+        tools:layout="@layout/fragment_student_add" >
+        <action
+            android:id="@+id/action_studentAdd_to_studentFragment"
+            app:destination="@id/studentFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/studentUpdate"
+        android:name="com.example.testproject.View.studentUpdate"
+        android:label="fragment_student_update"
+        tools:layout="@layout/fragment_student_update" >
+        <action
+            android:id="@+id/action_studentUpdate_to_studentFragment"
+            app:destination="@id/studentFragment" />
     </fragment>
 </navigation>

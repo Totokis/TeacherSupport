@@ -17,9 +17,13 @@ class StartFragment : Fragment()
         savedInstanceState: Bundle?
     ): View? {
         val view: View = inflater.inflate(R.layout.start_fragment, container, false)
-        view.button.setOnClickListener{
+        view.group_button.setOnClickListener{
             view.findNavController().navigate(R.id.action_startFragment_to_groupFragment)
 
+        }
+
+        view.students_button.setOnClickListener {
+            view.findNavController().navigate(R.id.action_startFragment_to_studentFragment)
         }
         return view;
     }

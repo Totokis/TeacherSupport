@@ -7,4 +7,12 @@
     <string name="group_add_button">Dodaj</string>
     <string name="group_name_row">Grupa A</string>
     <string name="update_button">Aktualizuj</string>
+    <string name="groups">Grupy</string>
+    <string name="students">Studenci</string>
+    <string name="student_id">id</string>
+    <string name="student_name">Imie</string>
+    <string name="student_last_name">Nazwisko</string>
+    <string name="enter_name">Podaj imie</string>
+    <string name="enter_last_name">Podaj nazwisko</string>
+    <string name="add_student">Dodaj</string>
 </resources>

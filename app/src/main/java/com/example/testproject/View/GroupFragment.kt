@@ -9,10 +9,9 @@ import androidx.lifecycle.Observer
 import androidx.lifecycle.ViewModelProvider
 import androidx.navigation.fragment.findNavController
 import androidx.recyclerview.widget.LinearLayoutManager
-import androidx.recyclerview.widget.ListAdapter
 import com.example.testproject.R
 import com.example.testproject.ViewModel.GroupViewModel
-import kotlinx.android.synthetic.main.group_fragment.view.*
+import kotlinx.android.synthetic.main.fragment_group.view.*
 
 class GroupFragment : Fragment(){
 
@@ -24,7 +23,7 @@ class GroupFragment : Fragment(){
         container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        val view: View = inflater.inflate(R.layout.group_fragment, container, false)
+        val view: View = inflater.inflate(R.layout.fragment_group, container, false)
 
         val adapter = GroupListAdapter()
         val recyclerView = view.recyclerview_group
@@ -36,9 +35,7 @@ class GroupFragment : Fragment(){
             adapter.setData(group)
         })
 
-
-
-        view.floatingActionButton.setOnClickListener{
+        view.group_floatingActionButton.setOnClickListener{
             findNavController().navigate(R.id.action_groupFragment_to_addGroup)
         }
 
